@@ -237,12 +237,12 @@ public class PlayerController : MonoBehaviour
     //±ä³ÉÌøÔ¾×´Ì¬
     private void Jump()
     {
-        //rb.velocity = transform.localPosition.normalized * jumpspeed * (Screen.width / 1920f);
+        rb.velocity = transform.localPosition.normalized * jumpspeed * (Screen.width / 1920f);
 
         //rb.AddForce(Vector2.up * jumpspeed, ForceMode2D.Impulse);
 
 
-        rb.AddForce(transform.localPosition.normalized * jumpspeed, ForceMode2D.Impulse);
+        //rb.AddForce(transform.localPosition.normalized * jumpspeed, ForceMode2D.Impulse);
         if (!Globle.SuperBall)
         {
             state = 1;
