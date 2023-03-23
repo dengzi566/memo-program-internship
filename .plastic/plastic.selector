@@ -1,0 +1,4 @@
+repository "实习-光年驿站@dengzi566@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
